@@ -94,8 +94,57 @@
 
 
         <!--4.spring依赖-->
-
-
+        <!--1).核心依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>4.1.9.RELEASE</version>
+        </dependency>
+        <!--ioc bean-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>4.1.9.RELEASE</version>
+        </dependency>
+        <!--spring的扩展，比如说报扫描、-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.1.9.RELEASE</version>
+        </dependency>
+        <!--2).spring dao 层依赖-->
+        <!--提供事物管理器-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>4.1.9.RELEASE</version>
+        </dependency>
+        <!--事物相关的依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>4.1.9.RELEASE</version>
+        </dependency>
+        <!--3).web相关依赖-->
+        <!--项目通过servlet容易启动，容器启动需要加载spring iop aop 来启动spring的工厂，所以就需要这个依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>4.1.9.RELEASE</version>
+        </dependency>
+        <!--springMVC项目，所以需要这个-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>4.1.9.RELEASE</version>
+        </dependency>
+        <!--4).spring test相关依赖-->
+        <!--通过junit做相关的单元测试-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.1.9.RELEASE</version>
+        </dependency>
 
     </dependencies>
     <build>
